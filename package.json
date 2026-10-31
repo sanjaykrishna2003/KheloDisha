@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "KheloDisha - Sports Opportunity Decision Support Platform for Odisha & Viksit Bharat @ 2047",
   "main": "server/src/server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
   "scripts": {
-    "build": "cd server && npm install && npm run db:init && cd ../client && npm install && npm run build",
+    "build": "npm --prefix server install && npm --prefix server run db:init && npm --prefix client install && npm --prefix client run build",
     "start": "node server/src/server.js",
-    "dev:server": "cd server && npm start",
-    "dev:client": "cd client && npm run dev",
-    "build:client": "cd client && npm run build",
-    "test:server": "cd server && npm test",
-    "seed": "node server/src/db/seed.js && node server/src/db/computeAndStoreScores.js"
+    "dev:server": "npm --prefix server start",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "test:server": "npm --prefix server test",
+    "seed": "npm --prefix server run db:init"
   },
   "keywords": [
     "khelo-india",
