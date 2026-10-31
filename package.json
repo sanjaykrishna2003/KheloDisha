@@ -1,8 +1,10 @@
 {
   "name": "khelodisha",
   "version": "1.0.0",
-  "description": "KheloDisha - Sports Opportunity Decision Support Platform for Odisha",
+  "description": "KheloDisha - Sports Opportunity Decision Support Platform for Odisha & Viksit Bharat @ 2047",
+  "main": "server/src/server.js",
   "scripts": {
+    "build": "cd server && npm install && npm run db:init && cd ../client && npm install && npm run build",
     "start": "node server/src/server.js",
     "dev:server": "cd server && npm start",
     "dev:client": "cd client && npm run dev",
@@ -12,9 +14,10 @@
   },
   "keywords": [
     "khelo-india",
+    "viksit-bharat",
     "sports-governance",
     "decision-support"
   ],
-  "author": "KheloDisha Team",
+  "author": "sanjaykrishna2003",
   "license": "ISC"
 }

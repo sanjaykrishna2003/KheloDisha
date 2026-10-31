@@ -8,6 +8,12 @@
   <img src="client/public/viksit-bharat-logo.png" alt="Viksit Bharat @ 2047" width="160" />
 </div>
 
+<div align="center">
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/sanjaykrishna2003/KheloDisha)
+
+</div>
+
 [![Tests](https://img.shields.io/badge/tests-17%20passed-success)](file:///c:/khelodisha/server/test)
 [![Scoring Engine](https://img.shields.io/badge/scoring-exact%20acceptance%20match-teal)](file:///c:/khelodisha/server/src/scoring/engine.js)
 [![Child Safety](https://img.shields.io/badge/privacy-mandatory%20consent%20gate-orange)](file:///c:/khelodisha/server/src/middleware/consentGate.js)
