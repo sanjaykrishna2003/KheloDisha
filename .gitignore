@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+!.env.example
+!server/.env.example
+
+# Local SQLite databases (recreated via `npm run seed` or `npm run db:init`)
+server/data/*.db
+server/data/*.db-wal
+server/data/*.db-shm
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS and Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
